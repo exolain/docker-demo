@@ -1,4 +1,4 @@
-node("docker") {
+node("swarm") {
     docker.withRegistry('https://hub.docker.com/r/exolain/registry-nmarinpe/', 'exolain') {
     
         git url: "https://github.com/exolain/docker-demo", credentialsId: 'exolain'
